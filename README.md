@@ -1,0 +1,1 @@
+This project is test task for React Native Developer
