@@ -1,20 +1,5 @@
-node_modules/
-android/.gradle/*
-android/app/build/*
-android/build/*
-android/.idea/*
-android/local.properties
-.expo/
-npm-debug.*
-/.vscode
-.DS_Store
-android/.DS_Store
-ios/.DS_Store
-project.xcworkspace
-ios/Pods/Pods.xcodeproj/xcuserdata/*
-android/.idea/workspace.xml
-android/app/app.iml
-
+# OSX
+#
 .DS_Store
 
 # Xcode
@@ -35,15 +20,17 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-project.xcworkspace
+ios/.xcode.env.local
 
+# Android/IntelliJ
+#
 build/
 .idea
 .gradle
 local.properties
 *.iml
-android/app/src/main/libs
-android/app/src/main/obj
+*.hprof
+.cxx/
 
 # node.js
 #
@@ -54,10 +41,24 @@ yarn-error.log
 # BUCK
 buck-out/
 \.buckd/
+*.keystore
+!debug.keystore
 
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
-ios/Pods
-Pods/
-android/app/.externalNativeBuild
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
+
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+
+# Bundle artifact
+*.jsbundle
+
+# Ruby / CocoaPods
+/ios/Pods/
+/vendor/bundle/
